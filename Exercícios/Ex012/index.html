@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Vídeos com HTML</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>   
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <video width="560" poster="Imagens/floresta.png" controls>
+        <source src="midias/Meuvideo.webm" type="video/webm">
+        <source src="midias/Meuvideo.mkv" type="video/mp4">    
+        <source src="midias/Meuvideo.mp4" type="video/mp4">   
+        <source src="midias/Meuvideo.ogv" type="video/ogv">
+        <p>Seu navegador não possi compatibilidade com reprodução de vídeos.<a href="midias/Meuvideo.mp4"> Acesse para fazer download.</a></p>
+    </video>
+    <h1>Inserindo vídeos externos</h1>
+    <h2>Inserindo vídeos do YouTube</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3mbvWn1EY6g?si=KVZqxkmRDY5aboI4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <br>
+    <h2>Inserindo vídeos do Vimeo</h2>
+    <div style= "padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/689479185?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:560px;height:100%;" title="desenho animado"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+@charset "UTF-8";
+@font-face {
+    font-family: idroid;
+    src: url(fontes/idroid.otf); format: ('opentype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+body{
+    background-color: #84E1AD;
+}
+.titulos{
+    font-family: idroid;
+}
+header{
+    margin-bottom: 2px;
+    margin-right: -8px;
+    margin-top: -8px;
+    margin-left: -8px;
+    padding: 5px;
+    background-image: linear-gradient(to top, #1A5C38, #3cd680);
+    box-shadow: 1px 1px 6px black;
+}
+
+nav > a{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    text-decoration: none;
+    text-shadow: 1px 1px 4px black;
+}
+
+nav > a:hover{
+    padding:3px;
+    border-radius: 2px;
+    background-color: #3cd67f4b;
+    text-decoration: none;
+}
+p > a{
+    text-decoration: none;
+    color: #2FA866;
+    font-weight: bold;
+}
+p > a:hover {
+    border-radius: 2px;
+    font-style: italic;
+}
+.negrito{
+    font-weight: bold;
+    color: #2FA866;
+}
+header > h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 3em;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+}
+
+header > p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+}
+
+h1{
+    font-size: 22px;
+    color: #1A5C39;
+}
+
+h2{
+    font-size: 18px;
+    color: #1A5C39;
+    background-image: linear-gradient(to left, #52e79548, #3cd67f60);
+}
+
+main{
+    font-family: serif;
+    border-radius: 0px 0px 5px 5px;
+    border: transparent;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 4px black;
+    min width: 250px;
+    max width: 800px;
+}
+
+.container{
+    width: 100%;
+    max-width: 800px;/* Limita tamanho das telas*/
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+picture img{
+    margin: auto;
+    width: 100%;
+}
+
+.bugdroid{
+    margin: auto;
+}
+
+.fundo{ 
+    box-shadow: 2px 2px 6px black;
+    border-radius: 6px;
+    display: block;
+    background-color: #1A5C38;
+    max-width: 800px;
+    height: 600px;
+    margin: auto;
+}
+
+aside>iframe{    
+    display: flex;
+    margin: auto;
+    width: 90%;
+    height: 90%;
+    padding-top: 4%;
+
+}
+
+nav{
+    padding: 5px;
+    text-align: left;
+    display: block;
+}
+
+nav > a {
+    color: rgb(252, 252, 252);
+    text-decoration: none;
+    text-align: left;
+    border-radius: 10px;
+}
+
+h3{
+    color: white;
+    background-color: #2FA866 ;
+    border-radius: 10px 10px 0px 0px;
+    padding-left: 15px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    margin-left: -15px; 
+    margin-right: -15px;
+}
+
+.extra{
+    padding-left: 15px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    border-radius: 10px;
+    background-color: #C5EBD6;
+}
+
+.coluna{
+    list-style-type: none;
+    column-count: 2;
+    column-gap: 40px;
+}
+
+footer{
+    text-align: center;
+    background-color: #1A5C38;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 8px -8px -8px -8px;
+    color: white;
+}
+.rpnegrito{
+    font-weight: bold;
+}
