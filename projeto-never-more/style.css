@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+:root{
+    --cor01:#;
+    --cor02:#;
+    --cor02:#;
+    --cor02:#;
+    --cor02:#;
+
+    --fonte01:'Rubik Wet Paint', cursive;
+    --fonte02:'Viaoda Libre', cursive;
+    --fonte03:'EB Garamond', arial, helvetica;
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    height: 220px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.87);
+}
+
+header h1{
+    font-family: var(--fonte01);
+    font-size: 120px;
+}
+
+header h2{
+    font-family: var(--fonte02);
+    font-size: 30px;
+}
+
+header h3{
+    text-align-last: right;
+    text-align: end;
+    font-family: var(--fonte02);
+    margin-right: 20px;
+}
+
+main a{
+    text-decoration: none;
+    color: white;
+
+}
+
+a.externo::after{
+    content: '\00A0\1F517';
+}
+
+pre {
+    font-family: var(--fonte03);
+    font-style: italic;
+    margin-top: 80px;
+    margin-left: 70px;
+    font-size: 50px;
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    color: rgb(214, 212, 212);
+    font-family: var(--fonte03);
+    text-align: center;
+    padding:12px;
+    margin-top: 8px;
+    font-size: 25px;
+    font-size:bold;
+}
