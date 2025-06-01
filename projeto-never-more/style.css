@@ -22,8 +22,20 @@
     padding: 0px;
 }
 
+main pre{
+    border: 3px solid black;
+    background-color: aqua;
+    min-width: 300px;
+    max-width: 100%;
+}
+
+main a{
+    text-decoration: none;
+    color: white;
+
+}
+
 header{
-    height: 220px;
     text-align: center;
     background-color: black;
     color: white;
@@ -49,22 +61,16 @@ header h3{
     margin-right: 20px;
 }
 
-main a{
-    text-decoration: none;
-    color: white;
-
+pre {
+    font-family: var(--fonte03);
+    font-style: italic;
+    margin: 80px 70px 20px 70px;
+    font-size: 50px;
+    display: block;    
 }
 
 a.externo::after{
     content: '\00A0\1F517';
-}
-
-pre {
-    font-family: var(--fonte03);
-    font-style: italic;
-    margin-top: 80px;
-    margin-left: 70px;
-    font-size: 50px;
 }
 
 footer {
