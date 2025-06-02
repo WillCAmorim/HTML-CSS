@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 013 - Parte I, II, III</title>
+    <style>
+        caption{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            text-decoration: underline;
+            font-weight: bolder;
+            background-color: black;
+            color: white;
+            padding: 6px;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+        td{
+            text-align: center;
+            border: 2px solid black;
+            padding: 10px;
+        }
+        th{
+            font-weight: bold;
+            text-align: center;
+            border: 2px solid black;
+            color: white;
+        }
+        .titulos{
+            background-color: rgba(0, 0, 0, 0.822);
+            text-shadow: 1px 1px 1px black;
+        }
+        .genero#m{
+            background-color: rgb(207, 83, 104);
+            text-shadow: 1px 1px 1px black;
+        }
+        .genero#h{
+            background-color: rgb(4, 4, 211);
+            text-shadow: 1px 1px 1px black;
+        }
+
+    </style>
+</head>
+<body> 
+    <table>
+        <caption>Desafio Parte I</caption>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td rowspan="2">3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td colspan="3">8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td rowspan="2">10</td>
+            <td colspan="2">11</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+
+    </table>
+<BR></BR>
+    <table>
+        <caption>Desafio Parte II</caption>
+        <tr>
+            <td colspan="4">A</td>
+            <td rowspan="4">B</td>
+        </tr>
+        <tr>
+            <td rowspan="4">C</td>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+        </tr>
+        <tr>
+            <td>J</td>
+            <td>L</td>
+            <td>M</td>
+        </tr>
+        <tr>
+            <td colspan="4">N</td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <caption>Desafio Parte III</caption>
+       <thead>         
+            <tr>
+                <th scope="col" class="titulos">Grupos</th>
+                <th scope="col"  class="titulos">Nomes</th>
+                <th scope="colgroup" colspan="3"  class="titulos">Filmes</th>
+            </tr>
+       </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="3" class="genero" id="m">Mulheres</th>
+                <td>Ana</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Beatriz</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td>Claudia</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="3" class="genero" id="h">Homens</th>
+                <td>Bruno</td>
+                <td>Intocáveis</td>
+                <td>Amnésia</td>
+                <td>Gladiador</td>
+            </tr>
+            <tr>
+                <td>Daniel</td>
+                <td>Wall-e</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>
+            <tr>
+                <td>Fabiano</td>
+                <td>Star Wars 5</td>
+                <td>Taxi Driver</td>
+                <td>Toy Stroy</td>
+        </tbody>
+    </table>
+</body>
+</html>
