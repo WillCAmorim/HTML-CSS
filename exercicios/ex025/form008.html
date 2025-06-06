@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo Formulário</h1>
+        <form action="">
+            <fieldset>
+                <legend>Output - Soma</legend>
+                <p>
+                    <label for="inumeroum">Número 1:</label>
+                    <input type="number" name="numeroum" id="inumeroum" min="0" max="50" required oninput="isoma.innerHTML = Number(inumeroum.value) + Number(inumerodois.value)">
+                </p>
+                <p>
+                    <label for="inumerodois">Número 2:</label>
+                    <input type="number" name="numerodois" id="inumerodois" min="0" max="50" required oninput="isoma.innerHTML = Number(inumeroum.value) + Number(inumerodois.value)">
+                </p>
+                <p>
+                    <label for="isoma">Soma</label> 
+                    <output name="soma" id="isoma">0</output>
+                </p>
+            
+            </fieldset>
+            <fieldset>
+                <legend>Oniput - Escolha de valor</legend>
+                <p>
+                    <label for="inumero">Número</label>
+                    <input type="range" name="numero" id="inumero" min="0" max="10" value="5" oninput="iescolha.innerHTML = Number(inumero.value)">
+                    <output id="iescolha">5</output>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Function Idade</legend>
+                
+                    <div>
+                        <label for="iano">Em que ano você nasceu?</label>
+                        <input type="number" name="ano" id="iano" min="1900" max="2025" oninput="calcIdade()">
+                        <p>
+                            <label for="idade">Sua idade é: </label>
+                            <output id="iidade">0</output>
+                        </p>
+                    </div>
+            </fieldset>
+                    <p>
+                            <input type="submit" value="Enviar">
+                            <input type="reset" value="Limpar">
+                    </p>
+</form>
+    <script>
+        function calcIdade(){
+        let atual = new Date().getFullYear()
+        iidade.innerHTML = Number(atual) - Number(iano.value)
+        }
+    </script>
+</body>
+</html>
